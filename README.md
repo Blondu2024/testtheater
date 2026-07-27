@@ -13,7 +13,7 @@ npx testtheater
 ```
   testtheater  ~/some-project
 
-  22 test files, 306 tests  (0 javascript, 306 python)
+  22 test files, 306 tests
 
   20 of them cannot fail (7%)
 
