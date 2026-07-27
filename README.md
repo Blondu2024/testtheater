@@ -5,7 +5,7 @@ How many of your tests cannot fail?
 A green test suite means one of two things: the code works, or the tests do not check anything. `testtheater` reads your test files and tells you which one you have. No config, no dependencies, JavaScript/TypeScript and Python.
 
 ```
-npx testtheater
+npx github:Blondu2024/testtheater .
 ```
 
 ## What it does
@@ -38,20 +38,21 @@ The score is the percentage of your tests that cannot fail. Lower is better. Zer
 
 ## Install
 
-Nothing to install:
+Nothing to install. Straight from this repo:
 
 ```bash
-npx testtheater path/to/project
+npx github:Blondu2024/testtheater .
+npx github:Blondu2024/testtheater path/to/project
 ```
 
-Or globally:
+Or clone it and run it:
 
 ```bash
-npm install -g testtheater
-testtheater .
+git clone https://github.com/Blondu2024/testtheater
+node testtheater/bin/testtheater.js path/to/project
 ```
 
-Node 18 or newer. No dependencies, ever.
+Node 18 or newer. No dependencies, ever. Not on npm yet, so `npx testtheater` on its own will not find it — use the `github:` form above.
 
 ## What counts as a test that cannot fail
 
@@ -83,7 +84,7 @@ Two more things are reported but **not** counted in the score, because they can 
 In CI:
 
 ```bash
-npx testtheater --max 0
+npx github:Blondu2024/testtheater . --max 0
 ```
 
 Exit codes: `0` fine, `1` score above `--max`, `2` bad usage.

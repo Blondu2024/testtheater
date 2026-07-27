@@ -8,7 +8,7 @@ const HELP = `
   testtheater — how many of your tests cannot fail?
 
   usage
-    npx testtheater [path] [options]
+    npx github:Blondu2024/testtheater [path] [options]
 
   options
     --json               machine readable output

@@ -7,6 +7,11 @@
     "testtheater": "bin/testtheater.js"
   },
   "main": "src/index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Blondu2024/testtheater.git"
+  },
+  "homepage": "https://github.com/Blondu2024/testtheater#readme",
   "exports": {
     ".": "./src/index.js"
   },
