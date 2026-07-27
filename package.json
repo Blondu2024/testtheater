@@ -1,0 +1,36 @@
+{
+  "name": "testtheater",
+  "version": "0.1.0",
+  "description": "Tells you how many of your tests cannot fail. No config, no dependencies.",
+  "type": "module",
+  "bin": {
+    "testtheater": "bin/testtheater.js"
+  },
+  "main": "src/index.js",
+  "exports": {
+    ".": "./src/index.js"
+  },
+  "files": [
+    "bin",
+    "src",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "test": "node --test test/*.test.js",
+    "start": "node bin/testtheater.js"
+  },
+  "keywords": [
+    "testing",
+    "test-quality",
+    "assertions",
+    "cli",
+    "code-quality",
+    "ai-generated-code"
+  ],
+  "author": "Cristian Tanase",
+  "license": "MIT",
+  "engines": {
+    "node": ">=18"
+  }
+}
